@@ -1,11 +1,3 @@
-#from selenium.webdriver import webdriver
-
-
-#browser = Chrome()
-#browser.get('https://www.browserstack.com')
-#print(browser.title)
-#browser.close()
-
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
@@ -29,12 +21,11 @@ box = driver.find_element_by_class_name("_1yd4lz78").click()
 
 driver.find_element_by_link_text("Continue").click()
 
+# accept_cookies
+# driver.find_element_by_css_selector('#page-wrapper > div._zdxht7 > div._12culun > div._1j7lbgv > div > div._1szrqxt > button')
 
-#id="RegistrationPage.AccountSection.email"
-#id="RegistrationPage.AccountSection.username"
-#id="RegistrationPage.AccountSection.password"
-#tick box class="_1yd4lz78"
-#RegistrationPage.TermsAndConditions.agree_terms
-#continue = driver.find_element_by_link_text("Continue").click()
+checkbox = driver.find_element_by_class_name("_1yd4lz78")
+
+Continue_button = driver.find_element_by_link_text("Continue")
 
 
